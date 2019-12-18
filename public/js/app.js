@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     
     var location = search.value
-    var queryString = 'http://localhost:3000/weather?address='+location 
+    var queryString = '/weather?address='+location 
 
     error.textContent = 'Fetching the data...'
     weather.textContent = ''
